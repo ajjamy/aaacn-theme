@@ -548,7 +548,8 @@ div#careers-events .conference_home .node-preview-container a.node-preview-backl
 /*  External links */
 p svg.mailto,
 li svg.ext,
-p svg.ext {
+p svg.ext,
+svg.ext {
 	 display: none; /* this svg is barely visible */
 }
 
@@ -1499,6 +1500,8 @@ p.discount {
 		margin: unset !important;
 		padding: unset !important;
 	}
+	
+	svg.ext { display: none; }
 
 	.link-box-content {
 		height: 100%;
