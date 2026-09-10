@@ -1,0 +1,18 @@
+
+$aaacn-green: #007E44;
+$aaacn-green-med: #7DBC9F;
+$aaacn-green-medpale: #9AC8B2;
+$aaacn-green-pale: #DBEBEA;
+
+$aaacn-blue: #005baa;
+
+//$aaacn-blue-pale: #dce1ea;
+$aaacn-blue-pale: #D5E1EF;
+
+
+:root {
+  --aaacn-green:#{$aaacn-green};
+  --aaacn-green-med:#{$aaacn-green-med};
+  --aaacn-green-pale:#{$aaacn-green-pale};
+  --aaacn-blue:#{$aaacn-blue};
+}

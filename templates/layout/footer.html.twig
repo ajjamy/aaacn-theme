@@ -1,0 +1,15 @@
+{%
+set footer_classes = ' ' ~
+  (b5_footer_schema != 'none' ? " footer-#{b5_footer_schema}" : ' ') ~
+  (b5_footer_schema != 'none' ? (b5_footer_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
+  (b5_footer_bg_schema != 'none' ? " bg-#{b5_footer_bg_schema}" : ' ')
+%}
+
+<footer class="site-footer mt-auto">
+    <div class="region region-footer">
+        {{ page.footer }}
+        <div class="copyright text-center mt-4 mb-4">
+            <p>&copy; {{ "now"|date("Y") }}, <a href="https://aaacn.org">American Academy of Ambulatory Care Nursing (AAACN)</a></p>
+        </div>
+    </div>
+</footer>

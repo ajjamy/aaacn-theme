@@ -1,0 +1,150 @@
+.navbar-brand {
+
+  width: 180px;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+
+  @include mq($from: 1150px) {
+    width: 225px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 1rem;
+  }
+
+  height: unset;
+
+  img {
+    margin-right: 0.5rem;
+    margin-bottom: 3px;
+    width: auto !important;
+    max-width: unset;
+  }
+
+  .site-logo {
+    @include mq($from: 990px) {
+      flex: 0 0 135px;
+    }
+  }
+
+  .site-title {
+    font-size: 1rem;
+
+    @include mq($from: 1150px) {
+      font-size: 1rem;
+    }
+
+    letter-spacing: 0;
+    text-transform: none;
+    font-weight: normal;
+    line-height: 1;
+    font-family: $ff-roboto-cond;
+    display: block;
+    flex: 0 0 150px;
+  }
+
+  .site-slogan {
+    font-size: 0.85rem;
+    margin: 0 0 3px 0;
+    font-family: $ff-lora;
+    font-style: italic;
+    color: $aaacn-green;
+  }
+
+  .row-1 {
+    // border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    // padding-bottom: 4px;
+  }
+}
+
+.region-nav-main {
+  order: 2;
+}
+
+.navbar-expand-lg {
+  .navbar-collapse {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+
+.region-nav-additional {
+  display: flex;
+  align-items: center;
+}
+
+
+header>nav {
+  /* border-bottom: 1px solid #DDD !important; */
+  /* border-radius: 0 !important; */
+}
+
+header {
+  flex: 0 0 80px;
+
+  @include mq($from: 991px) {
+    flex: 0 0 140px;
+  }
+}
+
+header>nav {
+  position: fixed !important;
+  width: 100%;
+  background: white;
+  z-index: 99;
+}
+
+.menu--account,
+.menu--menu-top-menu-bar {
+  a {
+    color: $aaacn-green;
+  }
+
+  .nav>li>a:focus,
+  .nav>li>a:hover {
+    background: none;
+  }
+}
+
+/*
+ * childrend of region-nav-additional: 
+ * .menu--account is cloned, to appear in the megamenu mobile slideout
+ */
+.main.navbar {
+  #block-aaacnv3-search-form,
+  .menu--account {
+    @include mq($from: 991px) {
+      display: none;
+    }
+  }
+}
+
+.region-nav-additional {
+  @include mq($until: 991px) {
+    display: none;
+  }
+}
+
+.region-we-mega-menu {
+  div#block-aaacnv3-search-form {
+    position: absolute;
+    top: 10px;
+  }
+}
+
+
+.navbar>.container {
+  justify-content: center;
+}
+
+// button.navbar-toggler {
+//   display: none;
+// }
+
+
+@include mq($until: 990px) {
+  .navbar>.container .navbar-brand {
+    margin-left: 0;
+  }
+}

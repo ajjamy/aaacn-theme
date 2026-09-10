@@ -1,0 +1,16 @@
+.container-main-landing-page {
+  .region-content {
+    padding: 0;
+  }
+}
+
+.paragraph--type--landing-page-row {
+  position: relative;
+  .container {
+    padding-bottom: 80px;
+    .content {
+      height: 400px;
+      overflow: hidden;
+    }
+  }
+}

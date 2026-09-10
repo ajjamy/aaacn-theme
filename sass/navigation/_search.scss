@@ -1,0 +1,12 @@
+#block-aaacnv3-search-form {
+  &:after {
+    content: '\f002';
+    font-family: Fontawesome;
+    color: $aaacn-green;
+    margin-left: 10px;
+  }
+
+  &>form {
+    display: none;
+  }
+}

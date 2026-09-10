@@ -1,0 +1,11 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+      css/overrides.css: {}
+global-scripts:
+  js:
+    js/script.js: {}
+    js/lib/fadeindiv.js: {}
+  dependencies:
+    - core/jquery

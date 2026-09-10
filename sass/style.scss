@@ -1,0 +1,25 @@
+// Sub theme styling.
+// @import 'variables_drupal';
+
+// Bootstrap overriden variables.
+// @see https://getbootstrap.com/docs/5.1/customize/sass/#variable-defaults.
+// @import 'variables_bootstrap';
+
+// Include bootstrap.
+// @import '../../../../themes/contrib/bootstrap5/scss/style';
+
+@import 'admin/_admin_in_theme';
+
+@import 'init/_init';
+
+@import 'content/_content';
+
+@import 'widgets/_widgets';
+
+@import 'layout/_layout';
+
+@import 'paragraphs/_paragraphs';
+
+@import 'pages/_pages';
+
+@import 'navigation/_navigation';

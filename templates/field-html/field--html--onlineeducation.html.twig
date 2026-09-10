@@ -1,0 +1,144 @@
+{#
+/**
+ * @file
+ * Theme override for a field.
+ *
+ * To override output, copy the "field.html.twig" from the templates directory
+ * to your theme's directory and customize it, just like customizing other
+ * Drupal templates such as page.html.twig or node.html.twig.
+ *
+ * Instead of overriding the theming for all fields, you can also just override
+ * theming for a subset of fields using
+ * @link themeable Theme hook suggestions. @endlink For example,
+ * here are some theme hook suggestions that can be used for a field_foo field
+ * on an article node type:
+ * - field--node--field-foo--article.html.twig
+ * - field--node--field-foo.html.twig
+ * - field--node--article.html.twig
+ * - field--field-foo.html.twig
+ * - field--text-with-summary.html.twig
+ * - field.html.twig
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the containing element.
+ * - label_hidden: Whether to show the field label or not.
+ * - title_attributes: HTML attributes for the title.
+ * - label: The label for the field.
+ * - multiple: TRUE if a field can contain multiple items.
+ * - items: List of all the field items. Each item contains:
+ *   - attributes: List of HTML attributes for each item.
+ *   - content: The field item's content.
+ * - entity_type: The entity type to which the field belongs.
+ * - field_name: The name of the field.
+ * - field_type: The type of the field.
+ * - label_display: The display settings for the label.
+ *
+ *
+ * @see template_preprocess_field()
+ */
+#}
+{%
+  set classes = [
+    'field',
+    'field--name-' ~ field_name|clean_class,
+    'field--type-' ~ field_type|clean_class,
+    'field--label-' ~ label_display,
+    label_display == 'inline' ? 'clearfix',
+  ]
+%}
+<div{{ attributes.addClass(classes, 'home_slide') }}>
+
+
+<div class="slide_bg">
+  <div class="slide_bg_inner">
+    <img src="/themes/custom/aaacnv3/assets/home/nurse-computer.jpg" xxsrc="/themes/custom/aaacnv1/assets/home/nurse-computer2.jpg">
+  </div>
+</div>
+
+{# <h2>47th Annual Conference</h2> #}
+
+
+<div class="content">
+  
+
+<div class="section section--1">
+  
+
+<div class="card card--1">
+
+<div class="inner">
+  
+
+<div class="conference-title">
+  
+  <h3><span>47<sup>th</sup></span>Annual Conference</h3>
+  <h4>May 17-21, 2022</h4>
+  <h5>Westgate Las Vegas</h5>
+ 
+</div>
+
+<img src="/themes/custom/aaacnv3/assets/home/101-First Timers copy.jpg">
+
+<p>A big thanks to everyone who was able to join us in Las Vegas! Don't forget to fill out your <a href="https://aaacn.org/events/dates-deadlines/last-day-fill-out-2022-annual-conference-evaluations-submit-july-10">2022 Annual Conference Evaluations</a> by July&nbsp;10!</p>
+</div>
+
+
+{#
+<div class="card card--2">
+<h3>Specialized Courses</h3>
+<ul>
+	<li><a href="https://library.aaacn.org/aaacn/specialties/3/view" target="_blank">Ambulatory Care Certification Review Course</a></li>
+	<li><a href="https://library.aaacn.org/aaacn/conferences/16/view" target="_blank">Care Coordination and Transition Management (CCTM) Course</a></li>
+</ul>
+</div>
+#}
+
+
+</div>
+</div>
+
+
+<div class="section section--2">
+  
+<div class="card card--3">
+
+<div class="inner">
+  
+
+<div class="conference-title">
+  
+  <h3><span>48<sup>th</sup></span>Annual Conference</h3>
+  <h4>April 11-15, 2023</h4>
+  <h5>Omni Orlando Resort</h5>
+
+</div>
+
+
+
+<p>
+  
+
+<h3>Call for Oral Abstracts</h3>
+<a class="btn btn-green btn-sm" href="https://aaacn.org/blueblockfrontpage">Submit by August 15, 2022</a>
+</p>
+
+<p>
+<h3>Call for Poster Abstracts</h3>
+<a class="btn btn-green btn-sm" href="https://aaacn.org/events/dates-deadlines/call-poster-abstracts-2023-annual-conference-due-1115">Submit by November 11, 2022</a>
+</p>
+
+
+</div>
+
+{#
+<div class="card card--4">
+<h3>Webinars</h3>
+<p>The AAACN Online Library offers <a href="https://library.aaacn.org/aaacn/store/2/index/15" target="_blank">webinars</a> for additional opportunities to continue your professional development, free to AAACN members.</p>
+</div>
+#}
+
+</div>
+</div>
+
+</div>
+

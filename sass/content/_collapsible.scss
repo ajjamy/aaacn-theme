@@ -1,0 +1,48 @@
+.collapsible-container {
+
+
+  h3 {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+
+
+    &:before {
+      content: '▶';
+      font-size: .65em;
+      display: block;
+      margin-right: 0.5em;
+      color: #7dbc9f;
+      transform: rotate(0deg);
+      transition-duration: .5s;
+    }
+
+    &.expanded:before {
+      transform: rotate(90deg);
+      transition-duration: .5s;
+    }
+
+    &:not(.expanded):hover::before {
+      margin-right: 0.25em;
+      margin-left: 0.25em;
+    }
+
+
+  }
+
+  .pane {
+    display: none;
+    background: #d5e1ef;
+    padding: 1rem 3rem;
+    margin-bottom: 1rem;
+
+    h2 {
+      font-size: 1.25rem;
+    }
+  }
+
+  .pane+h3 {
+    margin-top: 1rem;
+  }
+}

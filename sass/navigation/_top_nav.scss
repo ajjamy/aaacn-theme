@@ -1,0 +1,47 @@
+nav.menu--account {
+  ul {
+    display: flex;
+    margin: 8px 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      a {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 1em;
+        position: relative;
+        display: block;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      &:after {
+        content: ' ';
+        background: rgba(0, 0, 0, 0.1);
+        width: 1px;
+        height: 1em;
+      }
+
+      &:hover {
+        background: var(--aaacn-green);
+
+        a {
+          color: white;
+        }
+      }
+
+      &.nav-store:before {
+        content: '\f07a';
+        font-family: 'FontAwesome';
+        padding-left: 0.5rem;
+        color: var(--aaacn-green-med);
+        /* transform: rotateY(180deg); */
+      }
+    }
+  }
+}

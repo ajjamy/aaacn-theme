@@ -1,0 +1,82 @@
+.region-sidebar-first {
+  .block-menu {
+    @include mq($until: tablet) {
+      background: #EEE;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-left: calc(-1 * (20px + 0.5rem));
+      padding-left: calc(20px + 0.5rem);
+      margin-right: calc(-1 * (20px + 0.5rem));
+      padding-right: calc(20px + 0.5rem);
+
+      .dropdown-menu {
+        background: unset;
+      }
+
+    }
+
+
+    .nav-link,
+    .dropdown-menu>li>a {
+      @extend .link;
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+
+      white-space: normal;
+
+
+      &.active {
+        background-color: unset;
+        color: var(--aaacn-green) !important;
+        font-weight: bold;
+      }
+    }
+
+
+    .dropdown-menu {
+      border: 0;
+      box-shadow: none;
+      margin: 0;
+      padding: 0;
+
+      .dropdown-item.active {}
+    }
+
+    li.active {
+      .dropdown-menu {
+        display: block;
+      }
+    }
+
+    /* dropdown arrow */
+    .navbar-nav .dropdown-toggle::after {
+      display: none;
+    }
+
+
+    li.nav-item.nolink {
+      &>span {
+        //pointer-events: none;
+        cursor: pointer;
+        @extend %menu-nolink;
+        color: #777;
+        border-bottom: 1px solid;
+        font-size: 0.9em;
+        line-height: 1;
+        padding-bottom: 0;
+        padding-top: 15px;
+        padding-left: 0;
+      }
+
+      &.dropdown {
+        &>span {
+          border-bottom: 0;
+          letter-spacing: 0.5px;
+          font-size: 1em;
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,219 @@
+{#
+/**
+ * @file
+ * Theme override for a field.
+ *
+ * To override output, copy the "field.html.twig" from the templates directory
+ * to your theme's directory and customize it, just like customizing other
+ * Drupal templates such as page.html.twig or node.html.twig.
+ *
+ * Instead of overriding the theming for all fields, you can also just override
+ * theming for a subset of fields using
+ * @link themeable Theme hook suggestions. @endlink For example,
+ * here are some theme hook suggestions that can be used for a field_foo field
+ * on an article node type:
+ * - field--node--field-foo--article.html.twig
+ * - field--node--field-foo.html.twig
+ * - field--node--article.html.twig
+ * - field--field-foo.html.twig
+ * - field--text-with-summary.html.twig
+ * - field.html.twig
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the containing element.
+ * - label_hidden: Whether to show the field label or not.
+ * - title_attributes: HTML attributes for the title.
+ * - label: The label for the field.
+ * - multiple: TRUE if a field can contain multiple items.
+ * - items: List of all the field items. Each item contains:
+ *   - attributes: List of HTML attributes for each item.
+ *   - content: The field item's content.
+ * - entity_type: The entity type to which the field belongs.
+ * - field_name: The name of the field.
+ * - field_type: The type of the field.
+ * - label_display: The display settings for the label.
+ *
+ *
+ * @see template_preprocess_field()
+ */
+#}
+{%
+  set classes = [
+    'field',
+    'field--name-' ~ field_name|clean_class,
+    'field--type-' ~ field_type|clean_class,
+    'field--label-' ~ label_display,
+    label_display == 'inline' ? 'clearfix',
+  ]
+%}
+{% for item in items %}
+{#  <div{{ attributes.addClass(classes, 'field__item') }}> #}
+<div{{ attributes.addClass(classes, 'home_slide') }}>
+
+
+<div class="slide_bg">
+  <div class="slide_bg_inner">
+    <div class="a">
+        
+    </div>
+    <div class="b">
+    
+     </div>
+ </div>
+</div>
+
+<div class="slide_content">
+
+<div class="row">
+    <div class="col-5">
+        
+
+
+<h2>Career Center</h2>
+{#<h4>Connecting Talent with Opportunity</h4>#}
+
+<section id="hero" class="site" aria-label="Hero"> 
+<div class="site-name-tag"> 
+
+
+</div>
+
+
+<h4>Featured Jobs</h4>
+
+<div class="jobs_list">
+
+<div class="jt_job jt_row2"><div class="jt_job_position"><a href="https://jobs.aaacn.org/job/rn-clinical-ladder-ambulatory-otolaryngology-clinic/64116469/">RN Clinical Ladder, Ambulatory - Otolaryngology Clinic</a></div><div class="jt_job_description"></div><div class="jt_job_location">Charlottesville, VA</div><div class="jt_job_company">University of Virginia</div></div>
+
+<div class="jt_job jt_row1"><div class="jt_job_position"><a href="https://jobs.aaacn.org/job/ambulatory-administrative-coordinator/64116407/">Ambulatory Administrative Coordinator</a></div><div class="jt_job_description"></div><div class="jt_job_location">Charlottesville, VA</div><div class="jt_job_company">University of Virginia</div></div>
+
+
+<div class="jt_job jt_row2"><div class="jt_job_position"><a href="https://jobs.aaacn.org/job/faculty-position-ambulatory-practices-senior-ranks/64112128/">Faculty Position, Ambulatory Practices - Senior ranks</a></div><div class="jt_job_description"></div><div class="jt_job_location">Philadelphia, PA</div><div class="jt_job_company">University of Pennsylvania</div></div>
+
+<div class="jt_job jt_row2"><div class="jt_job_position"><a href="https://jobs.aaacn.org/job/rn-patient-safety-nurse-med-surgambulatory/64100182/">RN-Patient Safety Nurse-Med Surg/Ambulatory</a></div><div class="jt_job_description"></div><div class="jt_job_location">Bridgeport, CT</div><div class="jt_job_company">Yale New Haven Health System</div></div>
+
+</div>
+
+<div id="job-search-form" class="clearfix" role="search">
+<form id="jt_search" action="https://jobs.aaacn.org/jobs/" method="post" target="_blank">
+<input aria-label="Job Keyword Search" type="hidden" name="site_id" value="23545">
+<fieldset>
+<legend style="position: absolute;left: -999em;">Job Search Keywords</legend>
+<input autocomplete="off" type="search" title="keywords" value="" id="keywords" name="keywords" tab-index="10" maxlength="500" placeholder="Keyword or Job Title">
+</fieldset>
+<div class="location_autocomplete">
+<input type="search" aria-label="location search input" id="location" tab-index="2" maxlength="500" placeholder="Location" name="location" autocomplete="off" class="ui-autocomplete-input">
+<input type="hidden" aria-hidden="true" value="" id="location_completion" name="location_completion">
+<input type="hidden" aria-hidden="true" value="" id="location_type" name="location_type">
+<input type="hidden" aria-hidden="true" value="" id="location_text" name="location_text">
+
+{# <i id="location-icon" class="fa fa-location-arrow"></i> #}
+
+</div>
+<fieldset class="call-to-action">
+<legend style="position: absolute;left: -999em;">Submit Search</legend>
+
+  
+  <div class="btn-green">
+<a href="/events/dates-deadlines" class="btn-green">Search Jobs</a>
+</div>
+
+</fieldset>
+</form>
+</div>
+
+
+</section>
+
+    </div>
+    
+     <div class="col-7">
+         <div class="dates-inner">
+         <h2>Dates & Deadlines</h2>             
+<div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-event-calendar-date-1">        <div class="field-content"><div class="row">
+  <div class="col-xs-2 ddl-date">
+    <span class="date-display-single" property="" datatype="xsd:dateTime" content="2022-06-30T00:00:00-04:00"><div class="m">Jun</div> 30 <div class="m"></div></span>
+  </div>
+  <div class="col-xs-10">
+    <div class="ddl-title">
+      <a href="/events/dates-deadlines/deadline/run-2023-aaacn-ballot">Run for the AAACN 2023 Ballot (Last day to submit: 06/30)</a>
+    </div>
+    <div class="ddl-desc">
+       <div class="ddl-full-date">
+         <em><span class="date-display-single" property="" datatype="xsd:dateTime" content="2022-06-30T00:00:00-04:00">Jun 30, 2022</span></em>
+      </div>
+    </div>
+  </div>
+</div></div>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field views-field-event-calendar-date-1">        <div class="field-content"><div class="row">
+  <div class="col-xs-2 ddl-date">
+    <span class="date-display-single" property="" datatype="xsd:dateTime" content="2022-06-30T00:00:00-04:00"><div class="m">Jun</div> 30 <div class="m"></div></span>
+  </div>
+  <div class="col-xs-10">
+    <div class="ddl-title">
+      <a href="/events/dates-deadlines/free-ncpd/free-monthly-ncpd-june-2022-offer-ends-0630-0">Free Monthly NCPD: June 2022 (Offer ends: 06/30)</a>
+    </div>
+    <div class="ddl-desc">
+       <div class="ddl-full-date">
+         <em><span class="date-display-single" property="" datatype="xsd:dateTime" content="2022-06-30T00:00:00-04:00">Jun 30, 2022</span></em>
+      </div>
+    </div>
+  </div>
+</div></div>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd">
+      
+  <div class="views-field views-field-event-calendar-date-1">        <div class="field-content"><div class="row">
+  <div class="col-xs-2 ddl-date">
+    <span class="date-display-single" property="" datatype="xsd:dateTime" content="2022-07-10T00:00:00-04:00"><div class="m">Jul</div> 10 <div class="m"></div></span>
+  </div>
+  <div class="col-xs-10">
+    <div class="ddl-title">
+      <a href="/events/dates-deadlines/last-day-fill-out-2022-annual-conference-evaluations-submit-july-10">Last Day to fill out 2022 Annual Conference Evaluations (Submit by July 10)</a>
+    </div>
+    <div class="ddl-desc">
+       <div class="ddl-full-date">
+         <em><span class="date-display-single" property="" datatype="xsd:dateTime" content="2022-07-10T00:00:00-04:00">Jul 10, 2022</span></em>
+      </div>
+    </div>
+  </div>
+</div></div>  </div>  </div>
+  <div class="views-row views-row-4 views-row-even views-row-last">
+      
+  <div class="views-field views-field-event-calendar-date-1">        <div class="field-content"><div class="row">
+  <div class="col-xs-2 ddl-date">
+    <span class="date-display-single" property="" datatype="xsd:dateTime" content="2022-07-11T00:00:00-04:00"><div class="m">Jul</div> 11 <div class="m"></div></span>
+  </div>
+  <div class="col-xs-10">
+    <div class="ddl-title">
+      <a href="/events/dates-deadlines/ambulatory-care-nursing-certification-review-ambulatory-focused-ce-series">Ambulatory Care Nursing Certification Review - Ambulatory Focused CE Series (Last day to register: 07/11)</a>
+    </div>
+    <div class="ddl-desc">
+       <div class="ddl-full-date">
+         <em><span class="date-display-single" property="" datatype="xsd:dateTime" content="2022-07-11T00:00:00-04:00">Jul 11, 2022</span></em>
+      </div>
+    </div>
+  </div>
+</div></div>  </div>  </div>
+  
+  
+  <div class="btn-green">
+<a href="/events/dates-deadlines" class="btn-green">See All Events</a>
+</div>
+  
+    </div>
+         </div>
+
+     </div>
+    
+</div>
+
+
+</div>
+
+</div>
+{% endfor %}

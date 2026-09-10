@@ -1,0 +1,12 @@
+img.img-float-right {
+  float: right;
+  margin: 10px 0 10px 10px !important;
+}
+
+
+body.cke_editable,
+.node__content {
+  img {
+    max-width: 100%;
+  }
+}

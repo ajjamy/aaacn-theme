@@ -1,0 +1,27 @@
+.view-display-id-block_2 {
+  .views-row {
+    margin-bottom: 40px;
+  }
+
+
+  .views-field-field-event-category,
+  .views-field-field-event-type {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background: #9dcdb7;
+    padding: 0px 10px;
+    border-radius: 3px;
+  }
+
+  .views-field.views-field-title {
+    font-size: 1.2em;
+  }
+
+  .views-field.views-field-field-event-dates {
+    display: inline-block;
+  }
+}

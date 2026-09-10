@@ -1,0 +1,33 @@
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $aaacn-blue;
+}
+
+body.cke_editable,
+.node__content {
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 1em;
+  }
+
+  h2 {
+    color: $aaacn-green;
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    &.condensed {
+      font-family: $ff-roboto-cond;
+    }
+  }
+}
+
+

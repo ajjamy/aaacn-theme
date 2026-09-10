@@ -1,0 +1,142 @@
+{#
+/**
+ * @file
+ * Theme override for a field.
+ *
+ * To override output, copy the "field.html.twig" from the templates directory
+ * to your theme's directory and customize it, just like customizing other
+ * Drupal templates such as page.html.twig or node.html.twig.
+ *
+ * Instead of overriding the theming for all fields, you can also just override
+ * theming for a subset of fields using
+ * @link themeable Theme hook suggestions. @endlink For example,
+ * here are some theme hook suggestions that can be used for a field_foo field
+ * on an article node type:
+ * - field--node--field-foo--article.html.twig
+ * - field--node--field-foo.html.twig
+ * - field--node--article.html.twig
+ * - field--field-foo.html.twig
+ * - field--text-with-summary.html.twig
+ * - field.html.twig
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the containing element.
+ * - label_hidden: Whether to show the field label or not.
+ * - title_attributes: HTML attributes for the title.
+ * - label: The label for the field.
+ * - multiple: TRUE if a field can contain multiple items.
+ * - items: List of all the field items. Each item contains:
+ *   - attributes: List of HTML attributes for each item.
+ *   - content: The field item's content.
+ * - entity_type: The entity type to which the field belongs.
+ * - field_name: The name of the field.
+ * - field_type: The type of the field.
+ * - label_display: The display settings for the label.
+ *
+ *
+ * @see template_preprocess_field()
+ */
+#}
+{%
+  set classes = [
+    'field',
+    'field--name-' ~ field_name|clean_class,
+    'field--type-' ~ field_type|clean_class,
+    'field--label-' ~ label_display,
+    label_display == 'inline' ? 'clearfix',
+  ]
+%}
+{% for item in items %}
+{#  <div{{ attributes.addClass(classes, 'field__item') }}> #}
+<div{{ attributes.addClass(classes, 'home_slide') }}>
+
+<div class="slide_bg">
+  <div class="slide_bg_inner">
+    <img src="/themes/custom/aaacnv3/assets/home/nurses-hallway-3000w.jpg">
+  </div>
+</div>
+
+<h2>Connected Community</h2>
+
+<div class="community-wrapper sj-search-embedded" id="sjview_omnjahsrdfdjsprltpvp" sjinstance="app-1"><sjsearch-app id="app-1" ng-version="7.2.16" view-id="omnjahsrdfdjsprltpvp"><!----><!----><div class="sjs-inner"><!----><html-outlet></html-outlet><dynamic-html> <div id="divCheckbox" style="display: none;"><widget sjtype="search" sjid="search-1"><div><!----><!----><!----><html-outlet></html-outlet><dynamic-html><div class="sjsf-wrapper" data-sjsf-mode="simple" data-sjsf-multiline="true"><div class="sjsf-container"><div class="sj-autocomplete-wrapper"><div><div class="sj-searchInput-wrapper">
+            <label class="sjsf-input-wrapper"><textarea autocomplete="off" autosize="" rows="1" class="ng-untouched ng-pristine ng-valid sj-searchInput inputClass" style="overflow: hidden; height: auto;"></textarea></label><input class="sjsf-submit sj-searchInput inputClass" type="button">
+            <span class="sj-ac-input-enter sj-ac-input-enter-hidden">
+                Press
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 1V7H1M1 7L4 4M1 7L4 10" stroke="#4A90E2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                to run Query
+            </span>
+            <i class="sj-ac-clear sj-ac-clear-hidden"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" aria-label="Clear">
+    <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
+</svg></i>
+        <div class="sjsf-tips">
+                <div class="sjsf-search-help-icon">
+                    <svg viewBox="0 0 1792 1792">
+                        <path d="M1024 1376v-192q0-14-9-23t-23-9h-192q-14 0-23 9t-9 23v192q0 14 9 23t23 9h192q14 0 23-9t9-23zm256-672q0-88-55.5-163t-138.5-116-170-41q-243 0-371 213-15 24 8 42l132 100q7 6 19 6 16 0 25-12 53-68 86-92 34-24 86-24 48 0 85.5 26t37.5 59q0 38-20 61t-68 45q-63 28-115.5 86.5t-52.5 125.5v36q0 14 9 23t23 9h192q14 0 23-9t9-23q0-19 21.5-49.5t54.5-49.5q32-18 49-28.5t46-35 44.5-48 28-60.5 12.5-81zm384 192q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"></path>
+                    </svg>
+                </div>
+                <div class="sjsf-search-help-popup">
+                    <div class="sjsf-search-help-popup-inner">
+                        
+        <h4 class="sjsf-search-help-popup__heading" data-section="general">General</h4>
+        <ul class="sjsf-search-help__operators" data-section="general">
+            <li>
+                <strong class="sjsf-search-help__mark">(</strong>apple <strong class="sjsf-search-help__mark">OR</strong>&nbsp;pear<strong class="sjsf-search-help__mark">)</strong>&nbsp;<strong class="sjsf-search-help__mark">AND NOT</strong> cider</li>
+            <li>
+                <strong class="sjsf-search-help__mark">"</strong>big pear<strong class="sjsf-search-help__mark">"</strong>
+                <span class="sjsf-search-help__operators__res">match phrase</span>
+            </li>
+        </ul>
+        <h4 class="sjsf-search-help-popup__heading" data-section="structured">Structured Query Operators</h4>
+        <ul class="sjsf-search-help__operators" data-section="structured">
+            <li>
+                fruit=<span class="sjsf-search-help__mark">pear</span>
+                <span class="sjsf-search-help__operators__res">
+                    <b>fruit</b> field must be <b>pear</b> (case-sensitive)
+                </span>
+            </li>
+            <li>
+                fruit=<span class="sjsf-search-help__mark">"big pear"</span>
+                <span class="sjsf-search-help__operators__res"><b>fruit</b> field must be <b>big pear</b></span>
+            </li>
+            <li>
+                my_num&lt;<span class="sjsf-search-help__mark">12.42</span>
+                my_date&gt;<span class="sjsf-search-help__mark">2011</span>
+            </li>
+            <li>
+                set=<span class="sjsf-search-help__mark">country</span>
+                <span class="sjsf-search-help__operators__res">country field is <b>set</b></span>
+            </li>
+            <li>
+                sid=<span class="sjsf-search-help__mark">myseriesid</span> 
+                <span class="sjsf-search-help__operators__res">exact Series ID</span>
+            </li>
+            <li>
+                sid:<span class="sjsf-search-help__mark">users</span>
+                <span class="sjsf-search-help__operators__res">Series ID path</span>
+            </li>
+        </ul>
+        <h4 class="sjsf-search-help-popup__heading" data-section="unstructured">Unstructured Query Operators</h4>
+        <ul class="sjsf-search-help__operators" data-section="unstructured">
+            <li>
+                <span class="sjsf-search-help__mark">pear</span>
+                <span class="sjsf-search-help__operators__res">any field contains <b>pear</b> anywhere</span>
+            </li>
+            <li>
+                fruit:<span class="sjsf-search-help__mark">pear</span>
+                <span class="sjsf-search-help__operators__res">field <b>fruit</b> contains pear (case-insensitive)</span>
+            </li>
+        </ul>
+        <a target="_blank" class="sjsf-search-help-popup__link" href="http://docs.shooju.com/queries/">Learn More</a>
+                    </div>
+                </div>
+            </div></div></div><div class="sj-searchResults-wrapper" id="sj-searchResults-wrapper" style="display:none;">   <div class="sj-ac-loading-inner"></div>   <div class="sj-searchResults-hint sj-result-block" style="display:none;">       <div class="sj-searchResults-hint-badgeBlock">           <div class="sj-searchResults-hint-badge" style="background-color: #D7F0F5; color: #2FC3E4">Series</div>       </div>           <div class="sj-searchResults-hint-text"></div>   </div>   <div class="sj-searchResults-function sj-result-block" style="display:none;">       <div>           <div class="sj-searchResults-function-name"></div>           <div class="sj-searchResults-function-hint"></div>               <div class="sj-searchResults-function-morewrapper">                   <input class="sj-searchResults-function-show-more" id="ch" type="checkbox">                   <label class="sj-searchResults-function-show-more-label" for="ch" style="display:none;"></label>                   <pre class="sj-searchResults-function-pre"><span></span></pre>               </div>           </div>       </div>   <div class="sj-searchResults-info sj-result-block" style="display:none;"></div>   <div class="sj-searchResults sj-result-block">       <div class="sj-searchResults-currentRow"></div>       <div class="sj-searchResults-rows"></div>   </div></div></div></div></div></dynamic-html><!----><!----></div></widget></div><widget sjtype="list" sjid="list-1"><div><!----><!----><!----><html-outlet></html-outlet><dynamic-html><!----><!----><div class="sj-rs"><ul><!----><!----><li class="sj-rs-item"><!----><!----><html-outlet></html-outlet><dynamic-html><h3><a target="_blank" href="https://community.aaacn.org/communities/community-home/digestviewer/viewthread?MessageKey=3694a5d5-5633-4bce-a5c7-95f9627c6ea7&amp;CommunityKey=692b53b3-9f9d-4906-90ff-301d4eea8ab1&amp;bm=3694a5d5-5633-4bce-a5c7-95f9627c6ea7" style="text-transform: capitalize; font-weight: 600;">ambulatory care role query</a></h3><div> May 11, 2022
+</div><div>Posted In: <span style="display: inline-block; background: #888; color: #fff; border-radius: 5px; margin-right: 3px;padding:1px 7px;font-size:80%;">Leadership SIG Forum</span></div><div>Greetings,    Our ambulatory care practices are considering introduction of a new RN role that we are tentatively calling a Clinical Practice Coach....</div><div><a target="_blank" href="https://community.aaacn.org/communities/community-home/digestviewer/viewthread?MessageKey=3694a5d5-5633-4bce-a5c7-95f9627c6ea7&amp;CommunityKey=692b53b3-9f9d-4906-90ff-301d4eea8ab1&amp;bm=3694a5d5-5633-4bce-a5c7-95f9627c6ea7">View Post</a> (AAACN Membership Required)</div></dynamic-html><!----></li><li class="sj-rs-item"><!----><!----><html-outlet></html-outlet><dynamic-html><h3><a target="_blank" href="https://community.aaacn.org/communities/community-home/digestviewer/viewthread?MessageKey=6a1fc7c5-6596-459e-b9e3-f57b11f1ad55&amp;CommunityKey=d5e548c0-decf-4d4e-8c95-b545bff74ce5&amp;bm=6a1fc7c5-6596-459e-b9e3-f57b11f1ad55" style="text-transform: capitalize; font-weight: 600;">re: virtual conference</a></h3><div> May 11, 2022
+</div><div>Posted In: <span style="display: inline-block; background: #888; color: #fff; border-radius: 5px; margin-right: 3px;padding:1px 7px;font-size:80%;">Telehealth Nursing Practice SIG Forum</span></div><div>Hi Fran,    
+     We have a variety of sessions being live streamed next week, but remember, almost all the sessions are being recorded so you'll have...</div><div><a target="_blank" href="https://community.aaacn.org/communities/community-home/digestviewer/viewthread?MessageKey=6a1fc7c5-6596-459e-b9e3-f57b11f1ad55&amp;CommunityKey=d5e548c0-decf-4d4e-8c95-b545bff74ce5&amp;bm=6a1fc7c5-6596-459e-b9e3-f57b11f1ad55">View Post</a> (AAACN Membership Required)</div></dynamic-html><!----></li><li class="sj-rs-item"><!----><!----><html-outlet></html-outlet><dynamic-html><h3><a target="_blank" href="https://community.aaacn.org/communities/community-home/digestviewer/viewthread?MessageKey=00ca2272-8b5c-44b1-9c1a-5e64cec4ac3a&amp;CommunityKey=d5e548c0-decf-4d4e-8c95-b545bff74ce5&amp;bm=00ca2272-8b5c-44b1-9c1a-5e64cec4ac3a" style="text-transform: capitalize; font-weight: 600;">re: virtual conference</a></h3><div> May 11, 2022
+</div><div>Posted In: <span style="display: inline-block; background: #888; color: #fff; border-radius: 5px; margin-right: 3px;padding:1px 7px;font-size:80%;">Telehealth Nursing Practice SIG Forum</span></div><div>I found the same thing and am disappointed.       Any change the telehealth sessions can be virtual and can I just pay for those sessions and  not the...</div><div><a target="_blank" href="https://community.aaacn.org/communities/community-home/digestviewer/viewthread?MessageKey=00ca2272-8b5c-44b1-9c1a-5e64cec4ac3a&amp;CommunityKey=d5e548c0-decf-4d4e-8c95-b545bff74ce5&amp;bm=00ca2272-8b5c-44b1-9c1a-5e64cec4ac3a">View Post</a> (AAACN Membership Required)</div></dynamic-html><!----></li></ul></div><!----></dynamic-html><!----><!----></div></widget><i>Powered By <a href="https://www.fusesearch.com/" target="_blank">FUSE</a></i></dynamic-html><!----><!----></div></sjsearch-app>&nbsp;</div>
+
+
+</div>
+{% endfor %}

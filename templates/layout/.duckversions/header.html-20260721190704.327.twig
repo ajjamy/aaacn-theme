@@ -1,0 +1,30 @@
+{%
+set nav_classes = 'navbar navbar-expand-lg' ~
+  (b5_navbar_schema != 'none' ? " navbar-#{b5_navbar_schema}" : ' ') ~
+  (b5_navbar_schema != 'none' ? (b5_navbar_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
+  (b5_navbar_bg_schema != 'none' ? " bg-#{b5_navbar_bg_schema}" : ' ')
+%}
+
+<header class="site-header" role="banner">
+  {{ page.header }}
+
+  {% if page.nav_branding or page.nav_main or page.nav_additional %}
+  <nav class="{{ nav_classes }}">
+    <div class="{{ b5_top_container }} flex-column">
+        <div class="row w-100">
+            <div class="col-lg-4">
+            {{ page.nav_branding }}
+            </div>
+            <div class="col-lg-8 navbar-collapse justify-content-md-end flex-wrap">
+                {{ page.nav_additional }}
+            </div>
+        </div>
+        <div class="row w-100">
+            <div class="col-lg-9 navbar-collapse justify-content-md-end flex-wrap">
+                {{ page.nav_main }}
+            </div>
+        </div>
+    </div>
+  </nav>
+  {% endif %}
+</header>

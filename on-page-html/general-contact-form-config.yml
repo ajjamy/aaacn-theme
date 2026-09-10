@@ -1,0 +1,151 @@
+fieldset_contact_info:
+  '#type': fieldset
+  '#open': true
+  '#title': '<strong>Contact Information</strong>'
+  your_name_10:
+    '#type': textfield
+    '#title': 'First and Last Name'
+    '#title_display': inline
+    '#size': 30
+    '#required': true
+    '#format_items': comma
+  primary_email_10:
+    '#type': email
+    '#title': 'Primary Email'
+    '#description': 'Please include the best email for us to contact you regarding this inquiry.'
+    '#title_display': inline
+    '#size': 20
+    '#required': true
+    '#format_items': comma
+  are_you_a_aaacn_member__10:
+    '#type': select
+    '#options':
+      1: 'Yes'
+      2: 'No'
+    '#title_display': inline
+    '#title': 'Are you a AAACN Member?'
+fieldset_products:
+  '#type': fieldset
+  '#open': true
+  '#title': '<strong>I Would Like Information Regarding:</strong>'
+  '#description': '<strong><em>Select as many of the checkboxes as needed from the topics below. Please be as specific as possible with your request.</em></strong>'
+  ambulatory_care_nursing_certification:
+    '#type': checkbox
+    '#title': 'Ambulatory Care Nursing Certification'
+  questamb_care_how_to_prepare_11:
+    '#type': textarea
+    '#title': 'Please be specific (e.g. What should I study to prepare for this exam?)'
+    '#required': true
+    '#states':
+      visible:
+        ':input[name="ambulatory_care_nursing_certification"]':
+          checked: true
+    '#format_items': comma
+  care_coordination_and_transition_management_cctm_:
+    '#type': checkbox
+    '#title': 'Care Coordination and Transition Management (CCTM)'
+  interested_in_cctm_cou_11:
+    '#type': textarea
+    '#title': 'Please specify (e.g. I am interested in the CCTM Course/resources).'
+    '#required': true
+    '#states':
+      visible:
+        ':input[name="care_coordination_and_transition_management_cctm_"]':
+          checked: true
+    '#format_items': comma
+  certified_in_care_coordination_and_transition_management_ccctm_:
+    '#type': checkbox
+    '#title': 'Getting Certified in Care Coordination and Transition Management (CCTM)'
+  please_specify_e_g_what_should_i_study_to_prepare_for_this_exam__11:
+    '#type': textarea
+    '#title': 'Please specify (e.g. What should I study to prepare for this exam?)'
+    '#required': true
+    '#states':
+      visible:
+        ':input[name="certified_in_care_coordination_and_transition_management_ccctm_"]':
+          checked: true
+    '#format_items': comma
+  contact_hour_credit:
+    '#type': checkbox
+    '#title': 'Contact Hour Credit'
+  how_do_i_earn_contact_hour_questions_11:
+    '#type': textarea
+    '#title': 'Please specify (e.g. How do I earn contact hour credit on AAACN’s resources?)'
+    '#required': true
+    '#states':
+      visible:
+        ':input[name="contact_hour_credit"]':
+          checked: true
+    '#format_items': comma
+  education:
+    '#type': checkbox
+    '#title': Education
+  what_education_questions_do_you_have__11:
+    '#type': textarea
+    '#title': 'Please specify (e.g. Conference, ViewPoint, etc)'
+    '#required': true
+    '#states':
+      visible:
+        ':input[name="education"]':
+          checked: true
+    '#format_items': comma
+  special_interest_groups_sigs_:
+    '#type': checkbox
+    '#title': 'Special Interest Groups (SIGS)'
+  sigs_11:
+    '#type': textarea
+    '#title': 'Please specify (e.g. I’d like to join a SIG/Community; I’d like to become more involved)'
+    '#required': true
+    '#states':
+      visible:
+        ':input[name="special_interest_groups_sigs_"]':
+          checked: true
+    '#format_items': comma
+  membership:
+    '#type': checkbox
+    '#title': Membership
+  membersh_11:
+    '#type': textarea
+    '#title': 'Please specify (e.g. need to know when to renew; how to print my membership card, etc)'
+    '#required': true
+    '#states':
+      visible:
+        ':input[name="membership"]':
+          checked: true
+    '#format_items': comma
+  local_networking_groups_lng_:
+    '#type': checkbox
+    '#title': 'Local Networking Groups (LNG)'
+  please_specify_e_g_i_want_to_establish_a_new_lng_etc_11:
+    '#type': textarea
+    '#title': 'Please specify (e.g. I want to establish a new LNG, etc)'
+    '#required': true
+    '#states':
+      visible:
+        ':input[name="local_networking_groups_lng_"]':
+          checked: true
+    '#format_items': comma
+  sponsorship:
+    '#type': checkbox
+    '#title': Sponsorship
+  what_questions_do_you_have_about_sponsorship__11:
+    '#type': textarea
+    '#title': 'Please specify (e.g. how to become a corporate member; questions about advertising)'
+    '#required': true
+    '#states':
+      visible:
+        ':input[name="sponsorship"]':
+          checked: true
+    '#format_items': comma
+  other:
+    '#type': checkbox
+    '#title': Other
+  other_please_specify_11:
+    '#type': textarea
+    '#title': 'Please be as specific as possible with your questions.'
+    '#required': true
+    '#states':
+      visible:
+        ':input[name="other"]':
+          checked: true
+    '#format_items': comma

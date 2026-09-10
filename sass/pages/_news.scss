@@ -1,0 +1,19 @@
+.view-news {
+  &.view-display-id-embed_1 {
+    .views-field-title {
+      font-size: 1.2em;
+      margin-bottom: 0 !important;
+    }
+
+    .views-row {
+      margin-bottom: 1em;
+    }
+
+    .views-field-created {
+      font-size: 0.9em;
+      color: #777;
+      font-style: italic;
+      font-family: Lora;
+    }
+  }
+}

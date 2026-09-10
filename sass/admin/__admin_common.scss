@@ -1,0 +1,14 @@
+.toolbar-menu-administration .menu-item:last-child span {
+  padding-left: 2.75em;
+
+  &:before {
+    content: 'a';
+    color: #007e44;
+    font-size: 30px;
+    font-family: Times;
+    font-weight: 900;
+    left: 0.4em;
+    padding-top: 1px;
+  }
+
+}

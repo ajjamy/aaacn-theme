@@ -1,0 +1,21 @@
+a:focus {
+  text-decoration: none;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  color: white;
+}
+
+
+.g-8, .gy-8 {
+  --bs-gutter-y: 1.5rem;
+}
+
+.g-8, .gx-8 {
+  --bs-gutter-x: 3rem;
+}
+
+
+.fade.show {
+  opacity: 1;
+}

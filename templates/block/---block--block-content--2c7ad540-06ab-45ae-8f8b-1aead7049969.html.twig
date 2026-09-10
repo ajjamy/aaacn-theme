@@ -1,0 +1,75 @@
+{#
+/**
+ * @file
+ * Theme override to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ */
+#}
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+  ]
+%}
+<img src="/sites/default/files/aaacn-logo-trans_0.png" alt="Home" class="footer-logo">
+<div{{ attributes.addClass(classes) }}>
+    <section id="block-block-14" class="block block-block aaacn-address col-lg-12 clearfix">
+
+    <p class="footer-row-1">
+      <a href="https://www.facebook.com/AAACN" target="_blank" rel="noopener noreferrer"><img alt="" src="https://aaacn.org/sites/default/files/fb-icon.png" style="border-width: 0px; border-style: solid;"></a>
+      
+      <a href="https://twitter.com/AmbCareNursing" target="_blank" rel="noopener noreferrer"><img alt="" src="/sites/default/files/twitter-icon.png"></a>
+      
+      <a href="https://www.linkedin.com/company/american-academy-of-ambulatory-care-nursing" target="_blank" rel="noopener noreferrer"><img alt="" src="/sites/default/files/linked-icon.png"></a>
+      
+      </p>
+      
+      <p class="footer-row-2">
+        
+        <a href="/about/press-room">Press Room</a> | 
+        <a href="/about/media-coverage">Media Coverage</a> |
+        <a href="/about/contact-aaacn">Contact Us</a>
+        
+      </p>
+
+
+<p class="rtecenter">Copyright ©2022, <a href="/">American Academy of Ambulatory Care Nursing (AAACN)</a>.<br>
+No materials, including graphics, may be reused, modified,&nbsp;or reproduced without written permission.</p>
+
+<p class="rtecenter">&nbsp;</p>
+{#
+<script type="text/javascript">
+(function($) {
+        $( document ).ready(function() {
+            $('.logged-in').find('#block-system-user-menu ul li.first.last').prepend('<a style="width: 50px; height: 50px; margin-top: 10px;" href="https://my.aaacn.org/eweb/MemberPage.aspx?Site=AAACN"><img alt="My Account" src="/sites/all/themes/bootstrap_subtheme/images/user-icon.png"/></a>');
+            $('.not-logged-in').find('#block-system-user-menu ul li.first.last').prepend('<img style="width: 50px; height: 50px; margin-top: 10px;" alt="Not Logged In" src="/sites/all/themes/bootstrap_subtheme/images/no-user-icon.png"/>');
+        })
+})(jQuery);
+</script><!-- <p style="text-align: center;">East Holly Avenue, Box 56 | Pitman, NJ 08071-0056 | 800.262.6877 | <a href="/privacy-policy">Privacy Policy</a><br />
+<a href="mailto:aaacn@aaacn.org">aaacn@aaacn.org</a></p> -->
+#}
+</section>
+
+
+</div>

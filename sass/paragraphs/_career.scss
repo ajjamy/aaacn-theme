@@ -1,0 +1,51 @@
+div#careers-events {
+  svg.ext {
+    display: none;
+  }
+
+  .field--name-field-content-boxes>.row {
+    --bs-gutter-x: 100px;
+    >div:nth-child(1) {
+      @extend .col-md-5;
+    }
+
+    >div:nth-child(2) {
+      @extend .col-md-7;
+    }
+  }
+
+  .viewsreference--view-title,
+  .field--name-field-headline {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0.25em 0 0 0;
+  }
+
+  .jobs_list {
+    height: 400px;
+    overflow: hidden;
+
+    &:hover {
+      overflow: auto;
+    }
+
+    .jt_alljobs {
+      display: none;
+    }
+  }
+
+  .jt_button {
+    @extend .btn-green;
+    font-size: 1em !important;
+    line-height: 1em !important;
+    display: inline-block;
+    margin: 0 20px;
+  }
+
+  /* Events */
+  .views-field-title a {
+    color: #007e44;
+    font-size: 1.2em;
+  }
+}

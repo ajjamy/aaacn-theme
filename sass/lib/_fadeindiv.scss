@@ -1,0 +1,94 @@
+@mixin animation($name, $duration) {
+  animation-name: $name;
+  animation-duration: $duration;
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} { @content; }
+}
+
+@mixin transform($arg) {
+  transform: $arg;
+}
+
+@mixin opacity($arg) {
+  opacity: $arg;
+}
+
+.fadeindiv-hide {
+  visibility: hidden;
+}
+
+
+.fadeindiv-show-up-fast {
+	visibility: visible;
+  @include animation(fadeindiv_up, .5s);
+}
+
+
+.fadeindiv-show-up {
+	visibility: visible;
+  @include animation(fadeindiv_up, 1s);
+}
+
+.fadeindiv-show-down {
+	visibility: visible;
+  @include animation(fadeindiv_down, 1s);
+}
+
+.fadeindiv-show-left {
+	visibility: visible;
+  @include animation(fadeindiv_left, 1s);
+}
+
+.fadeindiv-show-right {
+	visibility: visible;
+  @include animation(fadeindiv_right, 1s);
+}
+
+
+@include keyframes(fadeindiv_up) {
+  0% {
+  	@include transform( translate(0.0px, 50.0px) );
+ 	  @include opacity(0);
+  }
+  100% {
+    @include transform( translate(0.0px, 0.0px) );
+ 	  @include opacity(1);
+  }  
+}
+
+
+@include keyframes(fadeindiv_down) {
+  0% {
+  	@include transform( translate(0.0px, -50.0px) );
+ 	  @include opacity(0);
+  }
+  100% {
+    @include transform( translate(0.0px, 0.0px) );
+ 	  @include opacity(1);
+  }  
+}
+
+
+@include keyframes(fadeindiv_left) {
+  0% {
+  	@include transform( translate(-50.0px, 0.0px) );
+ 	  @include opacity(0);
+  }
+  100% {
+    @include transform( translate(0.0px, 0.0px) );
+ 	  @include opacity(1);
+  }  
+}
+
+@include keyframes(fadeindiv_right) {
+  0% {
+  	@include transform( translate(50.0px, 0.0px) );
+ 	  @include opacity(0);
+  }
+  100% {
+    @include transform( translate(0.0px, 0.0px) );
+ 	  @include opacity(1);
+  }  
+}

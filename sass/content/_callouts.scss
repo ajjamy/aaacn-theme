@@ -1,0 +1,134 @@
+.callout-lightgreen {
+  background: #DBEBEA;
+  padding: 10px;
+
+  /* border: 1px solid #9AC8B2; */
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+
+.callout-lightblue {
+  background: #eaedf2;
+  padding: 10px;
+
+  /* border: 1px solid #9AC8B2; */
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+
+#conference {
+
+  @include mq($until: tablet) {
+    margin-bottom: 40px;
+  }
+  .container {
+    padding-bottom: 0 !important;
+  }
+
+  .pg_background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .pg_background:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.8) 33%, rgba(255, 255, 255, 0.8) 40%, rgba(255, 255, 255, 0.8) 100%);
+  }
+}
+
+.conference_home {
+  max-width: 340px;
+  margin: 20px auto;
+  padding: 20px;
+
+  hr {
+    height: 2px;
+    opacity: 1;
+    color: $aaacn-blue;
+  }
+
+  body.cke_editable & {
+    outline: 1px dotted red;
+  }
+
+  .conference-title {
+    h3 {
+      color: $aaacn-green;
+      margin-bottom: 0.5rem;
+
+      span {
+        font-family: $ff-lora;
+        font-style: italic;
+        margin-right: 0.3em;
+      }
+    }
+
+    h4,
+    h5 {
+      font-size: 1.25rem;
+      line-height: 1em;
+      color: var(--aaacn-blue);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    text-align: center;
+    //border-bottom: 2px solid var(--aaacn-blue);
+    //margin-bottom: 1em;
+  }
+
+  a.btn.btn-green {
+    width: 130px;
+    margin-bottom: 15px;
+  }
+
+}
+
+
+
+.row.cols-white-margin>div:first-child {
+  @include mq($until: tablet) {
+    border-bottom: 20px solid white;
+  }
+
+  @include mq($from: tablet) {
+    border-right: 10px solid white;
+  }
+}
+
+.row.cols-white-margin>div:nth-child(2) {
+  @include mq($from: tablet) {
+    border-left: 10px solid white;
+  }
+}
+
+
+/*
+ * Legacy
+ */
+ 
+.bq-10 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 15px;
+    background: #f5f5f5;
+    border-left: 4px solid #8a6fca;
+    font: 13px;
+    color: #444;
+    font-style: italic;
+} 
