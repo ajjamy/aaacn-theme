@@ -1,6 +1,6 @@
-name: 'AAACN v3.0'
+name: 'AAACN Theme v3.0'
 type: theme
-description: 'AAACN subtheme based on Bootstrap 5 theme.'
+description: 'Custom subtheme based on Bootstrap5 theme.'
 core_version_requirement: '^8.9 || ^9 || ^10 || ^11'
 'base theme': bootstrap5
 libraries:
